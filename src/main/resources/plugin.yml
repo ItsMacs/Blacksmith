@@ -1,0 +1,12 @@
+name: Blacksmith
+version: '${project.version}'
+main: eu.maxpi.fiverr.blacksmith.Blacksmith
+authors: [ Macslolz ]
+description: Plugin that makes blacksmithing possible
+website: fiverr.com/macslolz
+
+commands:
+  blacksmith:
+    description: Blacksmith
+  reloadbs:
+    description: Reloadbs

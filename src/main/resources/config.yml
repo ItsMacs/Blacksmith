@@ -1,0 +1,56 @@
+#Configuration file for Blacksmith
+
+lang:
+  no-permission: "&cYou don't have permission."
+  no-player: "&cThis player isn't online!"
+  no-weapon: "&cIn order to blacksmith anything you need to have an Axe or Sword in your main hand!"
+  gui-title: "&cBlacksmith"
+  confirm-name: "&a&LCONFIRM"
+  glass-name: "&cPress Confirm to confirm!"
+  reloaded: "&aPlugin reloaded!"
+
+#Attributes are:
+# generic.attackDamage
+# generic.attackSpeed
+# generic.maxHealth
+# generic.movementSpeed
+# generic.armor
+# generic.luck
+variants:
+  '1':
+    name: "&6Test 1!"
+    lore:
+      - "&6Sample lore!"
+    compounds:
+      '1':
+        string-attributes:
+          - "AttributeName:generic.attackDamage"
+          - "Name:generic.attackDamage"
+          - "Slot:mainhand"
+        double-attributes: [ ]
+        int-attributes:
+          - "Operation:0"
+          - "Amount:10"
+      '2':
+        string-attributes:
+          - "AttributeName:generic.luck"
+          - "Name:generic.attackDamage"
+          - "Slot:mainhand"
+        double-attributes: [ ]
+        int-attributes:
+          - "Operation:0"
+          - "Amount:10"
+  '2':
+    name: "&6Test 2!"
+    lore:
+      - "&eSample lore 2!"
+    compounds:
+      '1':
+        string-attributes:
+          - "AttributeName:generic.attackSpeed"
+          - "Name:generic.attackDamage"
+          - "Slot:mainhand"
+        double-attributes: [ ]
+        int-attributes:
+          - "Operation:0"
+          - "Amount:10"
