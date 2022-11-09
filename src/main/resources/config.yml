@@ -34,7 +34,7 @@ variants:
       '2':
         string-attributes:
           - "AttributeName:generic.luck"
-          - "Name:generic.attackDamage"
+          - "Name:generic.luck"
           - "Slot:mainhand"
         double-attributes: [ ]
         int-attributes:
@@ -48,7 +48,7 @@ variants:
       '1':
         string-attributes:
           - "AttributeName:generic.attackSpeed"
-          - "Name:generic.attackDamage"
+          - "Name:generic.attackSpeed"
           - "Slot:mainhand"
         double-attributes: [ ]
         int-attributes:

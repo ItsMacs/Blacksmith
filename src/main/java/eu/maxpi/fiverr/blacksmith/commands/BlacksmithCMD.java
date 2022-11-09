@@ -31,6 +31,7 @@ public class BlacksmithCMD implements CommandExecutor {
             return true;
         }
 
+        if(!sender.hasPermission("blacksmith.self")) return true;
         openMenu((Player)sender);
         return true;
     }
@@ -63,7 +64,7 @@ public class BlacksmithCMD implements CommandExecutor {
 
         inv.setItem(13, item.clone());
 
-        p.getInventory().setItemInMainHand(null);
+        //p.getInventory().setItemInMainHand(null);
         p.openInventory(inv);
     }
 }

@@ -20,12 +20,13 @@ public class onInvClick implements Listener {
         if(event.getCurrentItem() == null) return;
 
         if(event.getSlot() == 13 && event.getInventory().getItem(22).getType() != Material.SLIME_BLOCK){
-            event.getWhoClicked().getInventory().addItem(event.getCurrentItem().clone());
+            event.getWhoClicked().getInventory().setItemInMainHand(event.getCurrentItem().clone());
             event.getWhoClicked().closeInventory();
             return;
         }
 
         if(event.getSlot() == 22 && event.getInventory().getItem(22).getType() == Material.SLIME_BLOCK){
+            if(event.getInventory().getItem(13).getType() == null) return;
             event.getInventory().setItem(13, Blacksmith.smith(event.getInventory().getItem(13)));
             event.getInventory().setItem(22, Blacksmith.getGlass());
             Bukkit.getScheduler().scheduleSyncDelayedTask(Blacksmith.getInstance(), () -> ((Player)event.getWhoClicked()).updateInventory());
