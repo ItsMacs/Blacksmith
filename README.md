@@ -1,3 +1,3 @@
 # Blacksmith
 
-Plugin made for a client
+Plugin made for a customer
