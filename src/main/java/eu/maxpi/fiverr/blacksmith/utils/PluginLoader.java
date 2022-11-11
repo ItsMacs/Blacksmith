@@ -49,6 +49,7 @@ public class PluginLoader {
         });
     }
 
+    //most of this could be rewritten efficiently, couldn't be bothered tbh
     private static void loadDefaults(){
         WeaponAttribute woodSword = new WeaponAttribute("woodsword");
         WeaponAttribute stoneSword = new WeaponAttribute("woodsword");
